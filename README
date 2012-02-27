@@ -1,0 +1,14 @@
+I've been working on a small proof of concept code, that is basically a local namecoin DNS server. What it dose is relay all your DNS queries to 
+your regular DNS server and for the .bit queries it makes a "fake" answer. It gets this "fake" answer from namecoind trough json interface. 
+This gives you a now setup easy to use way of browsing .bit domains, witch works on all your applications and browsers.
+
+As i sad it's a proof of concept and very buggy but it works (more or less)
+
+
+How to use:
+In the OS, set your preferred DNS server to 127.0.0.1 and your alternate to 8.8.8.8 (google DNS server).
+This way you still have DNS when you stop this software  '
+
+Remember to start namecoind with RPC user name test password test. Its hard coded now, should be changed
+
+Now go to your browser and try gee.bit this should work, I've had problems with dot-bit.bit
